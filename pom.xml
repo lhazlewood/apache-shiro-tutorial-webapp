@@ -20,9 +20,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.foo.example</groupId>
-    <artifactId>shiroWebApp</artifactId>
+    <artifactId>apache-shiro-tutorial-webapp</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>Apache Shiro Webapp Tutorial</name>
+    <name>Apache Shiro Tutorial Webapp</name>
     <packaging>war</packaging>
 
     <properties>
@@ -77,7 +77,7 @@
             <version>${shiro.version}</version>
         </dependency>
 
-        <!-- Pull in Stormpath support (for quick Realm deployment): -->
+        <!-- Stormpath support for quick Realm deployment: -->
         <dependency>
             <groupId>com.stormpath.shiro</groupId>
             <artifactId>stormpath-shiro-core</artifactId>
