@@ -13,5 +13,5 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   --%>
-<%-- Forward the user to the home page --%>
+<%-- Default behavior is to simply show the site's home page --%>
 <jsp:forward page="home.jsp"/>
