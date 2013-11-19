@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2012 Stormpath, Inc. and contributors
+  ~ Copyright (c) 2013 Les Hazlewood and contributors
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@
     <groupId>com.foo.example</groupId>
     <artifactId>shiroWebApp</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>Apache Shiro Kickstart Webapp</name>
+    <name>Apache Shiro Webapp Tutorial</name>
     <packaging>war</packaging>
 
     <properties>

@@ -1,4 +1,3 @@
-# https://travis-ci.org/stormpath/stormpath-sdk-java
 language: java
 
 jdk:
