@@ -1,3 +1,5 @@
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   ~ Copyright (c) 2013 Les Hazlewood and contributors
   ~
@@ -22,9 +24,29 @@
     <!-- Add some nice styling and functionality.  We'll just use Twitter Bootstrap -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+    <style>
+        body{padding:0 20px;}
+    </style>
 </head>
 <body>
-    <h1>Hello, world!</h1>
+
+    <h1>Apache Shiro Tutorial Webapp</h1>
+
+    <p>Hi <shiro:guest>Guest</shiro:guest><shiro:user>
+        <%
+            //This should never be done in a normal page and should exist in a proper MVC controller of some sort, but for this
+            //tutorial, we'll just pull out Stormpath Account data from Shiro's PrincipalCollection to reference in the
+            //<c:out/> tag next:
+
+            request.setAttribute("account", org.apache.shiro.SecurityUtils.getSubject().getPrincipals().oneByType(java.util.Map.class));
+
+        %>
+        <c:out value="${account.givenName}"/></shiro:user>!
+        ( <shiro:user><a href="<c:url value="/logout"/>">Log out</a></shiro:user>
+        <shiro:guest><a href="<c:url value="/login.jsp"/>">Log in</a></shiro:guest> )
+    </p>
+
+    <p>Welcome to the Apache Shiro Tutorial Webapp.  This page represents the home page of any web application.</p>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
