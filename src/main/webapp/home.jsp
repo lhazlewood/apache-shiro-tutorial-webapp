@@ -61,7 +61,7 @@
 
     <p>
         <shiro:hasRole name="Captains">Captains<br/></shiro:hasRole>
-        <shiro:hasRole name="Officers}">Bad Guys<br/></shiro:hasRole>
+        <shiro:hasRole name="Officers">Bad Guys<br/></shiro:hasRole>
         <shiro:hasRole name="Enlisted">Enlisted<br/></shiro:hasRole>
     </p>
 
