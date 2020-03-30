@@ -25,6 +25,7 @@
 </head>
 <body>
     <h1>Hello, world!</h1>
+    <p>Testing step 1</p>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
